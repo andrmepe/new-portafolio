@@ -1,0 +1,30 @@
+.about-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 320px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row; /* Cambia a fila para alinear la imagen y el contenido lado a lado */
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        max-width: 800px; /* Ajusta según sea necesario para limitar el ancho del contenido en pantallas más grandes */
+        margin-top: 0;
+    }
+}
+
+.about-content > div {
+    max-width: 600px; /* Ajusta según sea necesario para limitar el ancho del contenido en pantallas más grandes */
+    margin-left: 20px; /* Agrega espacio entre la imagen y el contenido */
+}
