@@ -1,30 +1,67 @@
 .about-container {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.profile-image {
+    margin-top: 70px;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna por defecto */
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .profile-image {
     width: 320px;
     height: auto;
     margin-bottom: 20px;
-}
-
-.about-content {
-    @media (min-width: 768px) {
-        display: flex;
-        flex-direction: row; /* Cambia a fila para alinear la imagen y el contenido lado a lado */
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        max-width: 800px; /* Ajusta según sea necesario para limitar el ancho del contenido en pantallas más grandes */
-        margin-top: 0;
+    border-radius: 20px;
+  }
+  
+  .text-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 0;
+  }
+  
+  .text {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #100786;
+  }
+  
+  .logo-image {
+    border-radius: 5px;
+    width: 180px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Media Query para pantallas más grandes que dispositivos móviles */
+  @media (min-width: 768px) {
+    .content-container {
+      flex-direction: row;
+      margin-right: 100px;
+      margin-left: 100px;
     }
-}
-
-.about-content > div {
-    max-width: 600px; /* Ajusta según sea necesario para limitar el ancho del contenido en pantallas más grandes */
-    margin-left: 20px; /* Agrega espacio entre la imagen y el contenido */
-}
+  
+    .profile-image {
+      order: -1; /* Cambia el orden de la imagen de perfil a la izquierda */
+      margin-right: 20px; /* Añade un margen a la derecha */
+      margin-left: 20px;
+    }
+  
+    .text-container {
+      order: 0; /* Cambia el orden del contenedor de texto al centro */
+    }
+  
+    .logo-image {
+      order: 1; /* Cambia el orden de la imagen del logo a la derecha */
+    }
+  }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo1 from '../assets/Logo1.png';
+import Logo3 from '../assets/Logo3.png';
 
 function Navbar() {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -26,13 +26,13 @@ function Navbar() {
   };
 
   return (
-    <div style={{ position: "fixed", top: 0, width: "100%", backgroundColor: "black", zIndex: 1000, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px" }}>
-      <img style={{width:'120px', height:'Auto', marginLeft:'20px'}} src={Logo1} alt="LogoAndres"/>
+    <div style={{ position: "fixed", top: 0, width: "100%", backgroundColor: "#E8E7E7", zIndex: 1000, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px"}}>
+      <img style={{width:'120px', height:'Auto', marginLeft:'20px'}} src={Logo3} alt="LogoAndres"/>
 
       {isMobile ? (
         // Barra de navegación para dispositivos móviles
         <div>
-          <IconButton style={{color:'white', marginRight:'20px'}}
+          <IconButton style={{color:'#100786', marginRight:'20px'}}
             size="large"
             aria-controls="mobile-menu"
             aria-haspopup="true"
@@ -55,10 +55,10 @@ function Navbar() {
       ) : (
         // Botones para pantallas más grandes
         <div style={{ display: "flex", gap: "10px" ,flexDirection: "row", marginRight:'20px' }}>
-          <button style={{background:'#2a9edd'}} onClick={() => scrollToSection("about")}>About</button>
-          <button style={{background:'#2a9edd'}} onClick={() => scrollToSection("learned")}>Learned</button>
-          <button style={{background:'#2a9edd'}} onClick={() => scrollToSection("projects")}>Projects</button>
-          <button style={{background:'#2a9edd'}} onClick={() => scrollToSection("contact")}>Contact</button>
+          <button style={{background:'#5ebdeb'}} onClick={() => scrollToSection("about")}>About</button>
+          <button style={{background:'#5ebdeb'}} onClick={() => scrollToSection("learned")}>Learned</button>
+          <button style={{background:'#5ebdeb'}} onClick={() => scrollToSection("projects")}>Projects</button>
+          <button style={{background:'#5ebdeb'}} onClick={() => scrollToSection("contact")}>Contact</button>
         </div>
       )}
     </div>
