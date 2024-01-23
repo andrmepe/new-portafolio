@@ -40,7 +40,7 @@ function Projects() {
   };
 
   return (
-    <div id="projects" style={{ paddingTop: "40px", textAlign: 'center', color: '#100786', maxWidth: '100%', margin: '0 auto' }}>
+    <div id="projects" style={{ paddingTop: "40px", textAlign: 'center', backgroundColor:'#E0E0E1' ,color: '#100786', maxWidth: '100%', margin: '0 auto' }}>
       <h2>Projects Section</h2>
       <Slider {...settings} style={{ maxWidth: '90vw', margin: '0 auto' }}>
         {projectsData.map((project, index) => (

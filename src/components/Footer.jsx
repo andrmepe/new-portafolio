@@ -3,8 +3,9 @@ import React from "react";
 function Footer() {
   
   return (
-    <div style={{ bottom: 0, width: "100%", backgroundColor: "#fff", zIndex: 1000 }}>
-      <h1>FOOTER jeje</h1>
+    <div style={{ bottom: 0, width: "100%", zIndex: 1000, textAlign:'center', borderTop: '1px solid #ccc' }}>
+      <p>Designed by Andres Mejia | Made in React with Javascript</p>
+      <p>© copyright - 2024 Adelaide - Australia</p>
       </div>
   )
 }

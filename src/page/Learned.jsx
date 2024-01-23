@@ -10,7 +10,7 @@ import tailwindLogo from "../assets/tailwindLogo.png";
 
 function Learned() {
   return (
-    <div id="learned" style={{ paddingTop: "40px", textAlign:'center', color:'#100786'}}>
+    <div id="learned" style={{ paddingTop: "40px", textAlign:'center', backgroundColor:'#EBECEE' ,color:'#100786'}}>
       <h2>Technologies learned for website development</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
       <img style={{width:'200px', height:'auto', margin: '10px'}} src={htmlLogo} alt="HTML-Logo"/>
@@ -22,7 +22,7 @@ function Learned() {
       <img style={{width:'200px', height:'auto', margin: '10px'}} src={muiLogo1} alt="muiLogo1"/>
       <p style={{ margin: '0', fontWeight: 'bold', fontSize:'30px'}}>Material UI</p>
       </div>
-      <div>
+      <div style={{marginBottom:'100px'}}>
       <img style={{width:'200px', height:'auto', margin: '10px'}} src={tailwindLogo} alt="tailwindLogo"/>
       <p style={{ margin: '0', fontWeight: 'bold', fontSize:'30px' }}>Tailwind.css</p>
       </div>
