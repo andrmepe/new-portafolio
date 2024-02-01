@@ -11,6 +11,7 @@ import projectIcon from '../assets/project.png';
 function Navbar() {
   const isMobile = useMediaQuery("(max-width:600px)");
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [selectedSection, setSelectedSection] = React.useState(null);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -26,6 +27,7 @@ function Navbar() {
       section.scrollIntoView({
         behavior: "smooth",
       });
+      setSelectedSection(sectionId);
     }
     handleMenuClose(); // Cerrar el menú móvil después de hacer clic en un enlace
   };
@@ -50,22 +52,25 @@ function Navbar() {
             anchorEl={anchorEl}
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
-            style={{ width: '100%', maxWidth: 'none' }}
           >
-            <MenuItem  onClick={() => scrollToSection("about")}>
-              <img src={aboutIcon} alt="About" style={{ width:'20px', height:'auto', marginRight: '10px' }} />
+            <MenuItem onClick={() => scrollToSection("about")}
+            style={selectedSection === "about" ? { fontWeight: 'bold', fontSize: '1.3em' } : {}}>
+              <img src={aboutIcon} alt="About" style={{ width:'30px', height:'auto', marginRight: '10px' }} />
               About
             </MenuItem>
-            <MenuItem onClick={() => scrollToSection("learned")}>
-              <img src={learnedIcon} alt="Learned" style={{width:'20px', height:'auto', marginRight: '10px' }} />
+            <MenuItem onClick={() => scrollToSection("learned")}
+            style={selectedSection === "learned" ? { fontWeight: 'bold', fontSize: '1.3em' } : {}}>
+              <img src={learnedIcon} alt="Learned" style={{width:'30px', height:'auto', marginRight: '10px' }} />
               Learned
             </MenuItem>
-            <MenuItem onClick={() => scrollToSection("projects")}>
-              <img src={projectIcon} alt="Projects" style={{ width:'20px', height:'auto',marginRight: '10px' }} />
+            <MenuItem onClick={() => scrollToSection("projects")}
+            style={selectedSection === "projects" ? { fontWeight: 'bold', fontSize: '1.3em' } : {}}>
+              <img src={projectIcon} alt="Projects" style={{ width:'30px', height:'auto',marginRight: '10px' }} />
               Projects
             </MenuItem>
-            <MenuItem onClick={() => scrollToSection("contact")}>
-              <img src={contactIcon} alt="Contact" style={{width:'20px', height:'auto', marginRight: '10px' }} />
+            <MenuItem onClick={() => scrollToSection("contact")}
+            style={selectedSection === "contact" ? { fontWeight: 'bold', fontSize: '1.3em' } : {}}>
+              <img src={contactIcon} alt="Contact" style={{width:'30px', height:'auto', marginRight: '10px' }} />
               Contact
             </MenuItem>
           </Menu>
