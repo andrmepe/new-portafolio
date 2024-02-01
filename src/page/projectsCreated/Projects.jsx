@@ -6,28 +6,60 @@ import digimed3 from '../../assets/digimed3.png';
 import food1 from '../../assets/food1.png';
 import Markeplace from '../../assets/Markeplace.png';
 import PortafolioPrueba from '../../assets/PortafolioPrueba.png';
+import workflow1 from '../../assets/workflow1.png';
 
 function Projects() {
   const projectsData = [
     {
+      image: workflow1,
+      alt: 'workflow',
+      description: (
+        <div style={{color:'#41bcac'}}>
+        Our web platform connects users with specialized professionals, simplifying the search and hiring of services efficiently and cost-effectively. Watch the project on YouTube:  
+        <a href="https://www.youtube.com/watch?v=QznoBzjFSeM" target="_blank" rel="noopener noreferrer">
+          Workflow Video
+        </a> see more about the project
+      </div>
+      )
+    },
+    {
       image: digimed3,
       alt: 'digimed3',
-      description: 'Proyecto creado con el objetivo de crear una plataforma que ofrezca una forma transformadora de gestionar recetas médicas...',
+      description: (
+        <div  style={{color:'#1376f8'}}>
+        Project created with the aim of developing a platform that provides a transformative way to manage medical prescriptions. Watch the project on YouTube:  
+        <a href="https://www.youtube.com/watch?v=RvSBdnnmsh0" target="_blank" rel="noopener noreferrer">
+          Digimed Video
+        </a> see more about the project
+      </div>
+      )
     },
     {
       image: food1,
       alt: 'food1',
-      description: 'Proyecto creado para dar a los clientes la oportunidad de probar la comida colombiana y poder hacer pedidos en línea o ver el menú disponible.',
+      description: (
+        <div style={{color:'black'}}>
+          Project created to give customers the opportunity to taste Colombian cuisine and place orders online or view the available menu.
+        </div>
+      ),
     },
     {
       image: Markeplace,
       alt: 'Markeplace',
-      description: 'Creación de un mercado en línea donde el usuario puede realizar un filtro según lo que desee buscar para comprar en línea.',
+      description: (
+        <div style={{color:'#1376f8'}}>
+          Creation of an online marketplace where the user can apply filters based on what they wish to search for and purchase online.
+        </div>
+      ),
     },
     {
       image: PortafolioPrueba,
       alt: 'PortafolioPrueba',
-      description: 'Primer portafolio creado, lo llamé portafolio de prueba porque estaba ensayando la creación de mi portafolio.',
+      description: (
+        <div style={{color:'#4831d3'}}>
+          First portfolio created, I called it a test portfolio because I was practicing the creation of my portfolio.
+        </div>
+      ),
     },
   ];
 

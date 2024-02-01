@@ -9,16 +9,16 @@ function Contact() {
       <p><strong>Phone: 0451049712</strong></p>
       <p><strong>E-mail: </strong><a href="mailto:anmepe.sud@gmail.com">anmepe.sud@gmail.com</a></p>
       <p><strong>Redes sociales:</strong></p>
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.facebook.com/andres.m.perez.581?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
         <FaFacebook style={{color:'blue'}} size={30} />
       </a>
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
         <FaInstagram style={{color:'#DA4325', marginLeft:'20px'}} size={30} />
       </a>
-      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.youtube.com/channel/UC-IAsKi65gBrfeFVnUKD2lQ" target="_blank" rel="noopener noreferrer">
         <FaYoutube style={{color:'red', marginLeft:'20px'}} size={30} />
       </a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/andres-mejia-374483240/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin style={{color:'blue', marginLeft:'20px'}} size={30} />
       </a>
       <a href="https://wa.me/451049712" target="_blank" rel="noopener noreferrer">

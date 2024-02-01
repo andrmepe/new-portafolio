@@ -2,6 +2,11 @@ import React from "react";
 import { useMediaQuery, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo3 from '../assets/Logo3.png';
+import learnedIcon from '../assets/learned.png';
+import contactIcon from '../assets/contact.png';
+import aboutIcon from '../assets/about.png';
+import projectIcon from '../assets/project.png';
+
 
 function Navbar() {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -45,11 +50,24 @@ function Navbar() {
             anchorEl={anchorEl}
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
+            style={{ width: '100%', maxWidth: 'none' }}
           >
-            <MenuItem onClick={() => scrollToSection("about")}>About</MenuItem>
-            <MenuItem onClick={() => scrollToSection("learned")}>Learned</MenuItem>
-            <MenuItem onClick={() => scrollToSection("projects")}>Projects</MenuItem>
-            <MenuItem onClick={() => scrollToSection("contact")}>Contact</MenuItem>
+            <MenuItem  onClick={() => scrollToSection("about")}>
+              <img src={aboutIcon} alt="About" style={{ width:'20px', height:'auto', marginRight: '10px' }} />
+              About
+            </MenuItem>
+            <MenuItem onClick={() => scrollToSection("learned")}>
+              <img src={learnedIcon} alt="Learned" style={{width:'20px', height:'auto', marginRight: '10px' }} />
+              Learned
+            </MenuItem>
+            <MenuItem onClick={() => scrollToSection("projects")}>
+              <img src={projectIcon} alt="Projects" style={{ width:'20px', height:'auto',marginRight: '10px' }} />
+              Projects
+            </MenuItem>
+            <MenuItem onClick={() => scrollToSection("contact")}>
+              <img src={contactIcon} alt="Contact" style={{width:'20px', height:'auto', marginRight: '10px' }} />
+              Contact
+            </MenuItem>
           </Menu>
         </div>
       ) : (
